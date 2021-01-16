@@ -115,7 +115,7 @@ Git配置——git config
 > core.fscache=true
 > core.symlinks=false
 
-3、获取或设置某个配置项
+**3、获取或设置某个配置项**
 
 使用git config --list 获取当前配置文件下的所有配置后，可以对每项配置文件单独获取或者设置
 
@@ -152,6 +152,14 @@ Git配置——git config
 > remote.origin.url
 >
 > remote.origin.fecth
+
+
+
+### git提示信息
+
+1、Everything up-to-date
+
+git push时，提示该词，意思是：本地所有最新的，没有要push到远程仓库的。
 
 
 

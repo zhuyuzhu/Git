@@ -34,3 +34,12 @@ git show commitId:文件路径 > 输出文件名
 git show 97c119b73b880a1c8a5124c6a2f04f4bd7d113b4:./javascript.js > 1.js
 ```
 
+git status
+
+
+
+3、git add
+
+
+
+4、git commit
