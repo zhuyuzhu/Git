@@ -60,6 +60,32 @@ Git配置——git config
 
 一次配置，永久生效。
 
+
+
+#### 文件状态git status（重要）
+
+```shell
+On branch master
+Changes to be committed: 将要被提交的修改，在暂存区，当执行git commit时，提交这些文件。git rm 删除的文件直接进入暂存区，等待提交
+  (use "git restore --staged <file>..." to unstage)
+        new file:   DragEvent.md
+        deleted:    copy-cut-paste.md
+
+Changes not staged for commit: 修改的内容未在暂存区，文件修改了，但是还没提到暂存区
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Events.md
+
+Untracked files: git还未跟踪的文件，git add 会跟踪这些文件。
+  (use "git add <file>..." to include in what will be committed)
+        ClipboardEvent.md
+
+```
+
+
+
+
+
 ### git config来获取和设置变量。
 
 **1、git配置存在于三个地方：**
