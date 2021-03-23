@@ -201,3 +201,25 @@ git config --help
 
 默认浏览器会打开该地址：file:///D:/Git/mingw64/share/doc/git-doc/git-config.html
 
+
+
+### http.sslverify报错
+
+报错信息：fatal: unable to access 'https://github.com/zhuyuzhu/CSS.git/': OpenSSL SSL_read: Connection was reset
+
+这是因为服务器的SSL证书没有经过第三方机构的签署，所以需要设置为false。
+
+如下：git config --global http.sslverify "false"
+
+
+
+### git网络设置
+
+问题：Failed to connect to github.com port 443: Timed out
+
+无法访问GitHub网站，所以连接失败；
+
+如果电脑本身可以访问GitHub，但是开启代理后，导致无法访问。要设置电脑Internet的代理，取消 使用代理服务器。
+
+或者执行命令：git config --global --unset http.proxy 设置git不走代理。
+
