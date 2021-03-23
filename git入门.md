@@ -223,3 +223,15 @@ git config --help
 
 或者执行命令：git config --global --unset http.proxy 设置git不走代理。
 
+
+
+### 查看HEAD的位置：
+
+git log
+
+> commit 5949fdf7b9b76999c78195ca986d1aba5c2a4357 (HEAD -> master)
+>
+> commit 7b654f177e61b121e01d40c695b4e5ed2f620b8d (origin/master, origin/HEAD)
+
+commit 7b654f177e61b121e01d40c695b4e5ed2f620b8d (HEAD -> master, origin/master, origin/HEAD)
+
